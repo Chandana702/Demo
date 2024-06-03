@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Background Color Change</title>
+	<style type="text/css">
+		.container{
+			font-family: sans-serif;
+			position: relative;
+			top: 210px;
+			left: 0px;
+			text-align: center;
+		}
+		.container h2{
+			padding: 20px;
+			letter-spacing: 0.7px;
+		}
+		.btn-hero{
+			padding: 10px;
+			width: 200px;
+			font-weight: bolder;
+			border: 2px solid black;
+			border-radius: 10px;
+			cursor: pointer;
+			letter-spacing: 0.6px;
+		}
+		.btn-hero:hover{
+			color: white;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div class="container">
+			<h2>The Background color is : <span class="color">white</span></h2>
+			<button class="btn-hero" id="btn">Change Background</button>
+		</div>
+	</main>
+	<script type="text/javascript">
+		var colors=['white','lightgreen','gray','violet','skyblue','hotpink','yellow','orange','blue','pink','aquamarine','lightseagreen','salmon','purple'];
+		var len= colors.length-1;
+		var buttonControl=document.getElementById('btn');
+		var spanControl=document.querySelector('.color');
+
+		buttonControl.addEventListener('click',()=>{
+			var index=generateRandomnumber();
+			console.log(index);
+			document.body.style.backgroundColor=colors[index];
+			console.log(colors[index]);
+			spanControl.textContent=colors[index];
+		})
+
+		function generateRandomnumber() {
+			return Math.round(Math.random()*len);
+		}
+	</script>
+</body>
+</html>

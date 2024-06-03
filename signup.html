@@ -1,0 +1,122 @@
+<html>
+<head>
+	<title>Signup page</title>
+	<style type="text/css">
+		body{
+			background-color: #e7bcde;
+			font-family: sans-serif;
+		}
+		h2{
+			text-align: center;
+			color: pink;
+			word-spacing: 4px;
+			letter-spacing: 2px;
+		}
+		.formsec{
+			background-color: #67729d;
+			color: pink;
+			letter-spacing: 1px;
+			border-radius: 10px;
+			opacity: 0.8;
+			width: 400px;
+			margin-top: 35px;
+			padding: 20px;
+			text-align: left;
+			font-size: 13px;
+		}
+		.inputfield{
+			margin: 0px 7px;
+			padding: 8px;
+		}
+		.inputcolumn{
+			display: flex;
+		}
+		.inputfield input{
+			border: none;
+			border-radius: 4px;
+			height: 33px;
+			width: 100%;
+			margin-top: 5px;
+		}
+		.inputfield input[type="submit"]{
+			background-color: #e7bcde;
+			color: black;
+			letter-spacing: 2px;
+		}
+		.inputfield div{
+			border: none;
+			border-radius: 4px;
+			height: 33px;
+			width: 100%;
+			background-color: white;
+			margin-top: 5px;
+		}
+
+		input[type="radio"]{
+			display: none;
+		}
+		.label{
+			padding: 4px 20px;
+			position: relative;
+			top: 9px;
+			left: 40px;
+			border-radius: 6px;
+			height: 26px;
+			width: 120px;
+			background-color: beige;
+			color: black;
+			cursor: pointer;
+		}
+		#male:checked ~ .label-1,
+		#female:checked ~ .label-2{
+			background-color: pink;
+		}
+		a{
+			color: pink;
+		}
+	</style>
+</head>
+<body>
+<center>
+<div class="formsec">
+<h2>SIGN UP FORM</h2>
+<form>
+<div class="inputcolumn">
+<div class="inputfield">
+FirstName<br><input type="text" name="fname" required>
+</div>
+<div class="inputfield">
+LastName<br><input type="text" name="lname" required>
+</div>
+</div>
+<div class="inputfield">
+Email Address<br><input type="text" name="emailid" required>
+</div>
+<!--Gender<br><input type="radio" class="rad" name="gender" value="male" required><label for="male">Male</label>
+<input type="radio" class="rad" name="gender" value="female" required><label for="female">Female</label>
+<br><br>-->
+<div class="inputfield">
+Gender<br><div><input type="radio" name="gender" id="male" value="male"><label class="label label-1" for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female"><label class="label label-2" for="female">Female</label></div>
+	<!-- <input type="text" name="gender" value="Male    Female"> -->
+</div>
+<div class="inputfield">
+City<br><input type="text" name="city" required>
+</div>
+<div class="inputfield">
+Country<br><input type="text" name="country" required>
+</div>
+<div class="inputfield">
+Password<br><input type="password" name="password" required>
+</div>
+<div class="inputfield">
+<input type="submit" value="SIGN UP NOW">
+</div>
+<center><br>Click Here to <a href="loginAssigment.html">Login </a></center>
+
+</form>
+</div>
+</center>
+</body>
+</html>
+

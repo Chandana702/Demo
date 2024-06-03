@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Light and Dark</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			font-family: serif;
+		}
+		.button{
+			padding: 8px;
+			margin: 20px;
+			width: 100px;
+			font-weight: 700;
+			font-size: 20px;
+			border-radius: 20px;
+			border: none;
+			cursor: pointer;
+			background-color: purple;
+			color: white;
+		}
+		#btn1{
+			float: left;
+		}
+		#btn2{
+			float: right;
+		}
+		h1{
+			text-align: center;
+			position: relative;
+			top: 280px;
+			font-size: 42px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<button id="btn1" class="button">Dark</button>
+	<button id="btn2" class="button">Light</button>
+	<h1 id="heading"></h1>
+	</div>
+
+	<script type="text/javascript">
+		var button1=document.getElementById('btn1');
+		var button2=document.getElementById('btn2');
+		var heading=document.getElementById('heading');
+
+		button1.addEventListener('click',()=>{
+			heading.textContent="This is Dark Mode";
+			heading.style.color="white";
+			document.body.style.backgroundColor="black";
+		})
+
+		button2.addEventListener('click',()=>{
+			heading.textContent="This is Light Mode";
+			heading.style.color="black";
+			document.body.style.backgroundColor="white";
+		})
+	</script>
+</body>
+</html>

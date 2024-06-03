@@ -1,0 +1,99 @@
+<html>
+<head>
+	<title>Login page</title>
+	<style type="text/css">
+		body{
+			background-color: #b99fed;
+			font-family: sans-serif;
+		}
+		.whole{
+			display: flex;
+		}
+		.logo{
+			margin: 20px 0px 0px 30px;
+		}
+		.logo h1{
+			color: white;
+			padding: 5px;
+		}
+		.logo span{
+			color: #d93529;
+			font-size: 38px;
+		}
+		.formsec h2{
+			text-align: center;
+			color: white;
+		}
+		.formsec{
+			background-color: #67729d;
+			color: white;
+			letter-spacing: 1px;
+			border-radius: 10px;
+			width: 300px;
+			margin-top: 160px;
+			margin-left: 270px;
+			padding: 40px;
+			text-align: left;
+			font-size: 13px;
+		}
+		
+		input{
+			border: none;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 1px solid white;
+			background-color: rgba(51, 49, 48, 0.0);
+			color: white;
+			height: 33px;
+			width: 280px;
+			margin-top: 20px;
+		}
+		input::placeholder{
+			color: white;
+			letter-spacing: 1px;
+		}
+		input[type="submit"]{
+			background-color: #d93529;
+			opacity: 1.0;
+			color: white;
+			border-radius: 10px;
+			border: none;
+			letter-spacing: 1px;
+		}
+		a{
+			color: pink;
+			text-decoration-line: none;
+		}
+		img{
+			height: 150px;
+			width: 170px;
+		}
+	</style>
+</head>
+<body>
+	<div class="whole">
+	<div class="logo">
+	<img src="logo.jpg">
+	<h1>India's No 1<br><span>Training</span><br>Platform</h1>
+</div>
+<center>
+<div class="formsec">
+<h2>LOGIN</h2>
+<form>
+<input type="text" name="username" placeholder="Enter Username Here" required>
+<br><br>
+
+
+<input type="password" name="password" placeholder="Enter Password Here" required>
+<br><br>
+<input type="submit" value="Login">
+<br><br>
+<center><br>Don't have an account?<br><a href="sign.html">Sign up </a> here</center>
+
+</form>
+</div>
+</center>
+</div>
+</body>
+</html>
